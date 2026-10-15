@@ -2,7 +2,8 @@ export type TaskStatus = "Pending" | "In Progress" | "Completed";
 export type TaskPriority = "Low" | "Medium" | "High";
 
 export interface User {
-  id: string;
+  _id: string;
+  id?: string;
   name: string;
   email: string;
   createdAt?: string;
